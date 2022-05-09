@@ -1,37 +1,38 @@
 {
-  "name": "virtualkeybord",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build-dev": "webpack --mode=development",
-    "build": "webpack --mode=production",
-    "serve": "webpack server --mode=production",
-    "serve-dev": "webpack server --mode=development"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.17.10",
-    "@babel/preset-env": "^7.17.10",
-    "babel-loader": "^8.2.5",
-    "copy-webpack-plugin": "^10.2.4",
-    "css-loader": "^6.7.1",
-    "eslint": "^8.14.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "html-webpack-plugin": "^5.5.0",
-    "sass": "^1.51.0",
-    "sass-loader": "^12.6.0",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
+    "name": "virtualkeybord",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build-dev": "webpack --mode=development",
+      "build": "webpack --mode=production",
+      "serve": "webpack server --mode=production",
+      "serve-dev": "webpack server --mode=development"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.17.10",
+      "@babel/preset-env": "^7.17.10",
+      "babel-loader": "^8.2.5",
+      "copy-webpack-plugin": "^10.2.4",
+      "css-loader": "^6.7.1",
+      "eslint": "^8.14.0",
+      "eslint-config-standard": "^17.0.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-n": "^15.2.0",
+      "eslint-plugin-promise": "^6.0.0",
+      "html-webpack-plugin": "^5.5.0",
+      "sass": "^1.51.0",
+      "sass-loader": "^12.6.0",
+      "style-loader": "^3.3.1",
+      "webpack": "^5.72.0",
+      "webpack-cli": "^4.9.2",
+      "webpack-dev-server": "^4.9.0"
+    },
+    "dependencies": {
+      "lodash": "^4.17.21"
+    }
   }
-}
+  
