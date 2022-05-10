@@ -1,12 +1,66 @@
-import "./keyboard"
+
 import "./main.scss"
 
-// const fLine = ['/`', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12']
-// const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=']
-// const line1 = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', '/\//']
 
-// document.addEventListener('DOMContentLoaded',()=>{
-//     const el = document.createElement("div")
-//     el.innerText = "1111111111"
-//     document.body.append(el)
-// })
+
+
+
+import Keyboard from './keyboard';
+
+import defaultLayout from './defaultLayout.json';
+import keyCapsUS from './keyCaps_US.json';
+import keyCapsRU from './keyCaps_RU.json';
+class TextArea {
+    constructor() {
+      const el = document.createElement('textarea');
+      el.classList.add('textarea', 'section');
+      el.disabled = true;
+      el.rows = 10;
+      this.element = el;
+    }
+  
+    writeChar(ch) {
+      this.element.value += ch;
+    }
+  
+    removeChar() {
+      const oldValue = this.element.value;
+      this.element.value = oldValue.slice(0, -1);
+    }
+  
+    render({ element: rootElement }) {
+      rootElement.append(this.element);
+    }
+  }
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = new TextArea();
+  textarea.render({ element: document.body });
+
+  const capsCollection = [
+    {
+      langCode: 'US',
+      content: keyCapsUS,
+    },
+    {
+      langCode: 'RU',
+      content: keyCapsRU,
+    },
+  ];
+
+  const keyboard = new Keyboard(defaultLayout, capsCollection);
+  keyboard.attachOutput(textarea);
+  keyboard.render({ element: document.body });
+
+  const langNotice = document.createElement('p');
+  langNotice.classList.add('notice', 'section');
+  langNotice.innerHTML = 'Layout Change: Hold <kbd>Alt</kbd> + Tap <kbd>Shift</kbd>';
+
+  document.body.append(langNotice);
+
+  const osNotice = document.createElement('p');
+  osNotice.classList.add('notice', 'section');
+  osNotice.innerHTML = 'OS: Windows 11';
+
+  document.body.append(osNotice);
+});
+
