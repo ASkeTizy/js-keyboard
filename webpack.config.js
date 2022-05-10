@@ -1,7 +1,7 @@
 const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const EslintPlugin = require('eslint-webpack-plugin')
 module.exports = {
     entry: './src/main.js',
     output: {
@@ -41,6 +41,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin(),
+        new EslintPlugin()
     //   new CopyPlugin({
     //     patterns: [
          
