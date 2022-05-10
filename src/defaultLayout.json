@@ -1,0 +1,77 @@
+{
+    "lines": [
+      [
+        { "type": "char", "code": "Backquote", "span": 1 },
+        { "type": "char", "code": "Digit1", "span": 1 },
+        { "type": "char", "code": "Digit2", "span": 1 },
+        { "type": "char", "code": "Digit3", "span": 1 },
+        { "type": "char", "code": "Digit4", "span": 1 },
+        { "type": "char", "code": "Digit5", "span": 1 },
+        { "type": "char", "code": "Digit6", "span": 1 },
+        { "type": "char", "code": "Digit7", "span": 1 },
+        { "type": "char", "code": "Digit8", "span": 1 },
+        { "type": "char", "code": "Digit9", "span": 1 },
+        { "type": "char", "code": "Digit0", "span": 1 },
+        { "type": "char", "code": "Minus", "span": 1 },
+        { "type": "char", "code": "Equal", "span": 1 },
+        { "type": "functional", "code": "Backspace", "label": "Backspace", "span": 2 }
+      ],
+      [
+        { "type": "char", "code": "Tab", "span": 2, "label": "Tab" },
+        { "type": "char", "code": "KeyQ", "span": 1 },
+        { "type": "char", "code": "KeyW", "span": 1 },
+        { "type": "char", "code": "KeyE", "span": 1 },
+        { "type": "char", "code": "KeyR", "span": 1 },
+        { "type": "char", "code": "KeyT", "span": 1 },
+        { "type": "char", "code": "KeyY", "span": 1 },
+        { "type": "char", "code": "KeyU", "span": 1 },
+        { "type": "char", "code": "KeyI", "span": 1 },
+        { "type": "char", "code": "KeyO", "span": 1 },
+        { "type": "char", "code": "KeyP", "span": 1 },
+        { "type": "char", "code": "BracketLeft", "span": 1 },
+        { "type": "char", "code": "BracketRight", "span": 1 },
+        { "type": "char", "code": "Backslash", "span": 1 }
+      ],
+      [
+        { "type": "functional", "code": "CapsLock", "label": "Caps Lock", "span": 2 },
+        { "type": "char", "code": "KeyA", "span": 1 },
+        { "type": "char", "code": "KeyS", "span": 1 },
+        { "type": "char", "code": "KeyD", "span": 1 },
+        { "type": "char", "code": "KeyF", "span": 1 },
+        { "type": "char", "code": "KeyG", "span": 1 },
+        { "type": "char", "code": "KeyH", "span": 1 },
+        { "type": "char", "code": "KeyJ", "span": 1 },
+        { "type": "char", "code": "KeyK", "span": 1 },
+        { "type": "char", "code": "KeyL", "span": 1 },
+        { "type": "char", "code": "Semicolon", "span": 1 },
+        { "type": "char", "code": "Quote", "span": 1 },
+        { "type": "char", "code": "Enter", "label": "Enter", "span": 2 }
+      ],
+      [
+        { "type": "functional", "code": "ShiftLeft", "label": "Shift", "span": 2 },
+        { "type": "char", "code": "KeyZ", "span": 1 },
+        { "type": "char", "code": "KeyX", "span": 1 },
+        { "type": "char", "code": "KeyC", "span": 1 },
+        { "type": "char", "code": "KeyV", "span": 1 },
+        { "type": "char", "code": "KeyB", "span": 1 },
+        { "type": "char", "code": "KeyN", "span": 1 },
+        { "type": "char", "code": "KeyM", "span": 1 },
+        { "type": "char", "code": "Comma", "span": 1 },
+        { "type": "char", "code": "Period", "span": 1 },
+        { "type": "char", "code": "Slash", "span": 1 },
+        { "type": "char", "code": "ArrowUp", "label": "\u2191", "span": 1 },
+        { "type": "functional", "code": "ShiftRight", "label": "Shift", "span": 2 }
+      ],
+      [
+        { "type": "functional", "code": "ControlLeft", "label": "Ctrl", "span": 1 },
+        { "type": "functional", "code": "MetaLeft", "label": "Cmd", "span": 1 },
+        { "type": "functional", "code": "AltLeft", "label":"Alt", "span": 1 },
+        { "type": "char", "code": "Space", "label": " ", "span": 6 },
+        { "type": "functional", "code": "AltRight", "label": "Alt", "span": 1 },
+        { "type": "functional", "code": "ControlRight", "label": "Ctrl", "span": 1 },
+        { "type": "char", "code": "ArrowLeft", "label": "\u2190", "span": 1 },
+        { "type": "char", "code": "ArrowDown", "label": "\u2193", "span": 1 },
+        { "type": "char", "code": "ArrowRight", "label": "\u2192", "span": 1 }
+      ]
+    ]
+  }
